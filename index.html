@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Create Account Section -->
+        <section id="createAccountSection">
+            <h1>Create a New Bank Account</h1>
+            <input type="text" placeholder="Account Holder Name" id="holderName">
+            <input type="number" placeholder="Account Number" id="accountNo">
+            <input type="password" placeholder="Set Password" id="setPassword">
+            <button onclick="createAccount()">Create Account</button>
+        </section>
+
+        <!-- Transaction Section -->
+        <section id="operationsSection">
+            <h1>Bank Transactions</h1>
+            <input type="number" placeholder="Account Number" id="loginAccountNo">
+            <input type="password" placeholder="Password" id="loginPassword">
+            <input type="number" placeholder="Enter Amount" id="amount">
+            <button onclick="makeDeposit()">Deposit</button>
+            <button onclick="makeWithdrawal()">Withdraw</button>
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="viewHistory()">View Transaction History</button>
+        </section>
+
+        <!-- Display Output -->
+        <section id="displaySection">
+            <div id="output"></div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
